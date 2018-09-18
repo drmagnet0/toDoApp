@@ -3,10 +3,9 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~font-awesome/css/font-awesome.css';
 
-.mainContainer {
+body {
     background-color: #d2c0db;
     background-image: linear-gradient(141deg, #d2c0db 0%, #a7bee6 51%, #83bdf0 75%);
-    height: 100vh;
 }
 .blockContainer {
     background-color: white;
