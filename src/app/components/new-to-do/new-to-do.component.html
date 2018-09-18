@@ -1,0 +1,10 @@
+<div class="col-xs-12 backBtn" routerLink="/toDos">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+    Tasks
+</div>
+<div class="col-xs-12">
+  <h1 (click)="createNewTask(task)">create new task</h1>
+</div>
+<div class="col-xs-12">
+  <textarea placeholder="What You Want ?" [(ngModel)]="task"></textarea>
+</div>

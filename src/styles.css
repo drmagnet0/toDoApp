@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+
+.mainContainer {
+    background-color: #d2c0db;
+    background-image: linear-gradient(141deg, #d2c0db 0%, #a7bee6 51%, #83bdf0 75%);
+    height: 100vh;
+}
+.blockContainer {
+    background-color: white;
+    margin: 100px auto;
+    box-shadow: 0 0 47px 3px rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
+}
+.blockContainer h1 {
+    text-transform: capitalize;
+    color: #2798f7;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.blockContainer ul {
+    padding: 0;
+    margin: 0 0 0 50px;
+}
+.blockContainer ul li {
+    list-style: none;
+    margin-bottom: 35px;
+}
+.checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #78909c;
+    font-weight: normal;
+}
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: #eceff1;
+    border-radius: 50%;
+}
+.checkboxContainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.checkboxContainer input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkboxContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkboxContainer .checkmark:after {
+    left: 9px;
+    top: 6px;
+    width: 7px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.addBtn {
+    width: 60px;
+    height: 60px;
+    background: #2196f3;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 47px 3px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    display: block;
+    left: 90%;
+    margin-bottom: 50px;
+}
+.addBtn i {
+    color: white;
+    font-size: 19px;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.backBtn {
+    color: #b0bec5;
+    font-size: 18px;
+    cursor: pointer;
+}
+.backBtn i {
+    font-size: 22px;
+    padding-right: 7px;
+}
+.blockContainer textarea {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 50px;
+    color: #8f9ca3;
+    font-size: 52px;
+    font-weight: normal;
+}
+::placeholder {
+    color: #b0bec5;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #b0bec5;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #b0bec5;
+}
